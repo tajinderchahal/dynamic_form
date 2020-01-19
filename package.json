@@ -1,0 +1,25 @@
+{
+  "name": "dynamic_form",
+  "version": "1.0.0",
+  "description": "Mapping dynamic dynamic form with its values",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tajinderchahal/dynamic_form.git"
+  },
+  "author": "Tajinder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tajinderchahal/dynamic_form/issues"
+  },
+  "homepage": "https://github.com/tajinderchahal/dynamic_form#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "forever": "^2.0.0",
+    "forever-monitor": "^2.0.0",
+    "then-request": "^6.0.2"
+  }
+}
