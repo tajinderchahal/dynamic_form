@@ -4,6 +4,7 @@
   "description": "Mapping dynamic dynamic form with its values",
   "main": "app.js",
   "scripts": {
+    "start": "forever app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,8 @@
     "express": "^4.17.1",
     "forever": "^2.0.0",
     "forever-monitor": "^2.0.0",
+    "nodemon": "^2.0.2",
     "then-request": "^6.0.2"
-  }
+  },
+  "devDependencies": {}
 }

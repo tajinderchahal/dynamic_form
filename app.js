@@ -1,12 +1,15 @@
 var express = require("express");
 var app = express();
 var https = require('https');
+var path = require('path');
 
+/*
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
+*/
 
 var getDataFromApi = function(url, res) {
   var req = https.get(url, function(api_res) {
@@ -37,6 +40,12 @@ app.get("/api/v1/data", (req, res, next) => {
   getDataFromApi(dataUrl, res);
 });
 
-app.listen(5000, () => {
+app.use(express.static(path.join(__dirname, 'fe_client/build')));
+
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'fe_client/build', 'index.html'));
+});
+
+app.listen(process.env.PORT || 5000, () => {
  console.log("Server running on port 5000");
 });
