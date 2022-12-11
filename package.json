@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/tajinderchahal/dynamic_form#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "forever": "^2.0.0",
     "forever-monitor": "^2.0.0",
     "nodemon": "^2.0.2",
